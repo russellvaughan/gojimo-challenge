@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :qualification do
-    name "Diploma"
+    name "ASVAB"
   end
 end

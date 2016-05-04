@@ -41,6 +41,7 @@ group :development, :test do
 	gem 'selenium-webdriver'
 	gem 'factory_girl_rails'
 	gem 'shoulda'
+  gem 'webmock'
 end
 
 group :development do
