@@ -2,10 +2,10 @@
 <center><h2> <%= @qualification.name %> </h2> </a><center> <br>
 	<div>
 		<center><h3> Subjects: </h3> </center> 
-		<h4> <%= "No Subjects Available" if @qualification.subjects.empty? %> </h4> </br>
+		 <h4> <%= "No Subjects Available" if @qualification.subjects.empty? %> </h4> 
 		<div class = "container">
 			<div class='row center-block'>
-				<% col ="col-sm-4" if @qualification.subjects.length > 1  %>
+				<% col ="col-sm-4" if @qualification.subjects.length > 2  %>
 				<% @qualification.subjects.each do |subject| %>
 				<div class="track_container <%= col %>">
 					<h4 style=<%="color:#{subject.colour}"%> > <%= subject.title %></h4> 

@@ -4,15 +4,11 @@
 ## Description
 
 Develop a very simple working application on your chosen platform (Android / iOS / Web) with the
-
 following functionality:
 
 1. Read the following JSON feed containing a list of qualifications (a sample is presented below
-
 for your reference): https://api.gojimo.net/api/v4/qualifications
-
 2. Display a list of qualifications based on the data provided by the feed.
-
 3. Allow users to click a qualification to be presented with a list of subjects for that qualification.
 
 BONUS POINTS
@@ -20,18 +16,11 @@ BONUS POINTS
 Whilst not essential, we will be very pleased to see you take the challenge further by:
 
 i. Using the data provided to its full potential by taking advantage of fields like colour for subjects.
-
 ii. Making the GUI as appealing and responsive as possible.
-
 iii. Storing the data locally and refresh from the server as requested, taking advantage of the
-
 HTTP headers to avoid downloads of non-stale data.
-
 iv. Unit testing your code.
 
-## Overview of technologies used:
-
--Rails 4
 
 ## Approach to Testing & Development:
 
@@ -55,7 +44,6 @@ iv. Unit testing your code.
 ![Image of Subjects Page]
 (http://i.imgur.com/dWML7Cq.png)
 
-
 ## Live Site
 
 https://gojimo-challenge.herokuapp.com/
@@ -74,4 +62,5 @@ $ rails server # Runs the application locally
 
 ## Testing
 
-To run all unit tests: ```rspec```
+To run all unit tests: 
+```$rspec```
