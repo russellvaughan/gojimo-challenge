@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  root 'qualifications#index'
   resources :qualifications, only: [:index, :show]
 
   # Example of regular route:
