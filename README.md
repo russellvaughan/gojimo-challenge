@@ -39,7 +39,7 @@ HTTP headers to avoid downloads of non-stale data.
 ## Screenshots
 
 ![Image of Qualifications Page]
-(http://i.imgur.com/nNOQ6Fj.png)
+(http://i.imgur.com/uHy7zWb.png)
 
 ![Image of Subjects Page]
 (http://i.imgur.com/dWML7Cq.png)
