@@ -63,4 +63,4 @@ $ rails server # Runs the application locally
 ## Testing
 
 To run all unit tests: 
-```$rspec```
+```$ rspec```
