@@ -18,12 +18,11 @@ class Api
 
 	def persist_data
 		@data.map do |qualification| 
-		@qualification = Qualification.find_or_create_by(name: qualification["name"])
-		qualification["subjects"].map do |subject|
-		Subject.create(title: subject["title"], colour: subject["colour"],
-		qualification_id: @qualification.id, unique_id: subject["id"] )
+			@qualification = Qualification.find_or_create_by(name: qualification["name"])
+			qualification["subjects"].map do |subject|
+				Subject.create(title: subject["title"], colour: subject["colour"],
+					qualification_id: @qualification.id, unique_id: subject["id"] )
+			end
 		end
 	end
-end
-
 end

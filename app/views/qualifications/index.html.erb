@@ -1,12 +1,12 @@
 <img src= "http://www.gojimo.com/wp-content/uploads/2016/02/Logo-2-White-385x100.png"> 
 <center><h2> Qualifications </h2> <center> </br>
 
- <div class = "container">
-  <div class='row center-block'>
- 	<% @qualifications.each do |qualifcation| %>
- 	 <div class="track_container col-sm-3">
- <%= link_to qualifcation.name, qualification_path(qualifcation), :class => "ghost-button"%> 
-</div> 
-<% end %>
-</div>
-</div>
+	<div class = "container">
+		<div class='row center-block'>
+			<% @qualifications.each do |qualifcation| %>
+			<div class="track_container col-sm-3">
+				<%= link_to qualifcation.name, qualification_path(qualifcation), :class => "ghost-button"%> 
+			</div> 
+			<% end %>
+		</div>
+	</div>

@@ -1,19 +1,19 @@
 <img src= "http://www.gojimo.com/wp-content/uploads/2016/02/Logo-2-White-385x100.png"> 
 <center><h2> <%= @qualification.name %> </h2> </a><center> <br>
-<div>
-<center><h3> Subjects: </h3> </center> 
-<h4> <%= "No Subjects Available" if @qualification.subjects.empty? %> </h4> </br>
- <div class = "container">
-  <div class='row center-block'>
-  	<% col ="col-sm-4" if @qualification.subjects.length > 1  %>
-<% @qualification.subjects.each do |subject| %>
-	<div class="track_container <%= col %>">
-		<h4 style=<%="color:#{subject.colour}"%> > <%= subject.title %></h4> 
-</div> 
-<% end %>
-</div> 
-</div> 
+	<div>
+		<center><h3> Subjects: </h3> </center> 
+		<h4> <%= "No Subjects Available" if @qualification.subjects.empty? %> </h4> </br>
+		<div class = "container">
+			<div class='row center-block'>
+				<% col ="col-sm-4" if @qualification.subjects.length > 1  %>
+				<% @qualification.subjects.each do |subject| %>
+				<div class="track_container <%= col %>">
+					<h4 style=<%="color:#{subject.colour}"%> > <%= subject.title %></h4> 
+				</div> 
+				<% end %>
+			</div> 
+		</div> 
 
 
-</br>
-<%= link_to "Back to qualifications", qualifications_path, :class => "ghost-button"%> 
+	</br>
+	<%= link_to "Back to qualifications", qualifications_path, :class => "ghost-button"%> 
