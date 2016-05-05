@@ -56,3 +56,9 @@ h1, h4, h3, p {
               color 0.3s ease-in;
    text-decoration: none !important;
 }
+
+.responsive-image {
+  height: auto;
+  width: 100%;
+  max-width: 300px
+}
