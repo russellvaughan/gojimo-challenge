@@ -7,7 +7,7 @@ class Api
 
 	def fetch_data
 		fetch_from_api
-		persist_qualifications
+		persist_data
 	end
 
 	def fetch_from_api
@@ -16,7 +16,7 @@ class Api
 		@data = JSON.parse(response)
 	end
 
-	def persist_qualifications
+	def persist_data
 		@data.map do |qualification| 
 		@qualification = Qualification.find_or_create_by(name: qualification["name"])
 		qualification["subjects"].map do |subject|
