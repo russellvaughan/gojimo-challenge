@@ -1,0 +1,7 @@
+<center><h1> <%= @qualification.name %> </h1> </a><center> <br>
+
+<center><h2> Subjects: </h2> </a><center> <br>
+<%= "No Subjects Available" if @qualification.subjects.empty? %> </br>
+<% @qualification.subjects.each do |subject| %>
+<h4 style=<%="color:#{subject.colour}"%> > <%= subject.title %></h4> 
+<% end %>

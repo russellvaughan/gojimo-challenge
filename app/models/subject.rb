@@ -1,4 +1,4 @@
 class Subject < ActiveRecord::Base
   belongs_to :qualification
-  validates :unique_id, uniqueness: true
+  validates :title, uniqueness: { scope: :qualification_id }
 end

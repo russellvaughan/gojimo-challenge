@@ -8,7 +8,6 @@ class Api
 	def fetch_data
 		fetch_from_api
 		persist_qualifications
-		persist_subjects
 	end
 
 	def fetch_from_api
@@ -20,15 +19,11 @@ class Api
 	def persist_qualifications
 		@data.map do |qualification| 
 		@qualification = Qualification.find_or_create_by(name: qualification["name"])
+		qualification["subjects"].map do |subject|
+		Subject.create(title: subject["title"], colour: subject["colour"],
+		qualification_id: @qualification.id, unique_id: subject["id"] )
 		end
 	end
+end
 
-	def persist_subjects
-		@data.map do |qualification| 
-			qualification["subjects"].map do |subject|
-			Subject.create(title: subject["title"], colour: subject["colour"],
-			qualification_id: @qualification.id, unique_id: subject["id"] )
-			end
-		end
-	end
 end

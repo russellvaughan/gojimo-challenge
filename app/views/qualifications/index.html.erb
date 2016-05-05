@@ -1,0 +1,7 @@
+<center><h3> Qualifications </h3> </a><center> <br>
+
+<% @qualifications.each do |qualifcation| %>
+
+<%= link_to qualifcation.name, qualification_path(qualifcation) %></br>
+
+<% end %>
