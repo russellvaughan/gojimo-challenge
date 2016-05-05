@@ -15,11 +15,11 @@ BONUS POINTS
 
 Whilst not essential, we will be very pleased to see you take the challenge further by:
 
-i. Using the data provided to its full potential by taking advantage of fields like colour for subjects.
-ii. Making the GUI as appealing and responsive as possible.
-iii. Storing the data locally and refresh from the server as requested, taking advantage of the
+1. Using the data provided to its full potential by taking advantage of fields like colour for subjects.  
+2. Making the GUI as appealing and responsive as possible.  
+3. Storing the data locally and refresh from the server as requested, taking advantage of the
 HTTP headers to avoid downloads of non-stale data.
-iv. Unit testing your code.
+4. Unit testing your code.  
 
 
 ## Approach to Testing & Development:
