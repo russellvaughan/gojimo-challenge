@@ -25,9 +25,9 @@ HTTP headers to avoid downloads of non-stale data.
 ## Approach to Testing & Development:
 
 - Test Driven Development was used to build application.
-- 100% Test Coverage
+- 100% Test Coverage  
 [![Coverage Status](https://coveralls.io/repos/github/russellvaughan/gojimo-challenge/badge.svg?branch=master)](https://coveralls.io/github/russellvaughan/gojimo-challenge?branch=master)
-- Factory Girl used to substitute fixture.
+- Factory Girl used to substitute fixtures.
 - Webmock used to mock API requests
 - Controllers, Models and Services all unit tested.
 - Service created to fetch and store api data locally.
@@ -56,6 +56,7 @@ To deploy frontend
 $ https://github.com/russellvaughan/gojimo-challenge
 $ cd fairMuse/gojimo-challenge
 $ bundle # Installs all backend dependencies
+$ rake db:create
 $ rake update_feed 
 $ rails server # Runs the application locally
 ```
