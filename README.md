@@ -33,7 +33,7 @@ iv. Unit testing your code.
 
 -Rails 4
 
-## Approach to Testing:
+## Approach to Testing & Development:
 
 - Test Driven Development was used to build application.
 - 100% Test Coverage
@@ -41,17 +41,20 @@ iv. Unit testing your code.
 - Factory Girl used to substitute fixture.
 - Webmock used to mock API requests
 - Controllers, Models and Services all unit tested.
-
-## Approach to development:
-
 - Service created to fetch and store api data locally.
-- Rake task created to call service (give ability to use Heroku Scheduler.)
+- Utilized data fields to display subjects by their given colour.
 - Single Responsibilty Principle adhered to wherever possible.
+- Deployed to Heroku
+- Rake task created to call service (giving ability to use Heroku Scheduler.)
 
 ## Screenshots
 
 ![Image of Qualifications Page]
-http://i.imgur.com/nNOQ6Fj.png
+(http://i.imgur.com/nNOQ6Fj.png)
+
+![Image of Subjects Page]
+(http://i.imgur.com/dWML7Cq.png)
+
 
 ## Live Site
 
@@ -65,7 +68,7 @@ To deploy frontend
 $ https://github.com/russellvaughan/gojimo-challenge
 $ cd fairMuse/gojimo-challenge
 $ bundle # Installs all backend dependencies
-$ rake update_feed
+$ rake update_feed 
 $ rails server # Runs the application locally
 ```
 
