@@ -1,5 +1,5 @@
 
-## Gojimo Challenge
+# Gojimo Challenge
 
 ## Description
 
