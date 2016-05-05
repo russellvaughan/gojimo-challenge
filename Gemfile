@@ -42,6 +42,7 @@ group :development, :test do
 	gem 'factory_girl_rails'
 	gem 'shoulda'
   gem 'webmock'
+  gem 'coveralls', require: false
 end
 
 group :development do
